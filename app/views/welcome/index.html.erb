@@ -1,2 +1,8 @@
-<h1>Hello, Rails!</h1>
-<p>jsut os tot est</p>
+<ul>
+<% @events.each do |event| %>
+  <li>
+  <%= event.name %> |
+  <%= event.description %>
+  </li>
+<% end %>
+</ul>
